@@ -1,0 +1,49 @@
+
+.typing-app {
+    height: 500px;
+    width: 700px;
+    background: #aadafc;
+    color: black;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.has-focus {
+  border: 3px solid #88bafc;
+}
+
+.not-focused {
+  border: 3px solid #aadafc;
+}
+
+.hidden-input-text {
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  top: -100px;
+  left: -100px;
+}
+
+.right-char {
+  color: green;
+}
+
+.wrong-char {
+  color: red;
+}
+
+.background-char {
+  opacity: 0.7;
+}
+
+.cursor {
+  border-right: 0.1em solid white;
+  animation: caret 1s steps(1) infinite;
+}
+
+/* The typewriter cursor effect */
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
